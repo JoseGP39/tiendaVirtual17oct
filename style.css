@@ -68,28 +68,6 @@
     
     }
     
-    /* Estilos para la barra de navegación */
-    .contenido-central {
-      flex-grow: 1; /* La barra de navegación ocupa todo el espacio disponible */
-    }
-    
-    .contenido-central nav a {
-      text-decoration: none; /* Elimina el subrayado del texto */
-      color:#0E0325;
-    }
-    
-    .contenido-central nav ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      justify-content: flex-start /* Coloca los elementos al final */
-    
-    }
-    
-    .contenido-central nav li {
-      margin: 0 25px; /* Espaciado entre elementos de la barra de navegación */
-    }
-    
     /* Estilos para el icono del carrito */
     .icono-carrito {
       margin-right: 10px; /* Espaciado a la derecha del icono */
