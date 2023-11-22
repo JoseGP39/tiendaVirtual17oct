@@ -14,6 +14,22 @@
       height: 100%;   
       overflow: hidden; /* Opcional: para evitar barras de desplazamiento */
     }
+    h1, h2, h3, h4, h5, h6 {
+      font-family:"Myriad Pro", "Trebuchet MS", sans-serif;
+
+    hgroup {
+      position:fixed;
+      z-index:3;
+      left:10px;
+      top:10px;
+      padding:10px;
+      background:url(LogoTiendaDaniel.png);
+      color:#009274;
+      font-family:"Myriad Pro", "Trebuchet MS", sans-serif;
+      font-size:30px;
+      letter-spacing: 1px;
+      text-shadow: 4px 4px 5px #0005;                     /*text-shadow:rgba(0, 0, 0, 0.50) 0 1px 1px;*/
+    }
     
     .contenedor { /* Estilo para la clase "contenedor" */
       display: flex; /* Muestra los elementos hijos en línea (horizontalmente) */
@@ -23,7 +39,7 @@
 
     /* Estilo para los cards */
     .card {
-      margin: 5px; /* Agrega un margen entre los cards */
+    margin: 5px; /* Agrega un margen entre los cards */
     border: 1px solid #c1c2ca;
     padding: 16px;
     border-radius: 20px;
