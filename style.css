@@ -18,8 +18,8 @@
       font-family:"Myriad Pro", "Trebuchet MS", sans-serif;
 
     hgroup {
-      position:fixed;
-      z-index:3;
+      position:fixed; /*especifica cómo un elemento es posicionado en el documento*/
+      z-index:3; /*Indica el orden de un elemento posicionado y sus descendientes*/
       left:10px;
       top:10px;
       padding:10px;
