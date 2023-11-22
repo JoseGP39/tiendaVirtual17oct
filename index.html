@@ -5,50 +5,41 @@
   <meta name="viewport" content="width=device-width">
   <title>Proyecto formativo Daniel Giraldo</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <style>
-    /*En este ejemplo, hemos utilizado CSS flexbox para que los cards se muestren horizontalmente en la clase .contenedor. 
-      La propiedad flex-wrap: wrap permite que los cards se envuelvan a la siguiente línea cuando no caben en la pantalla, 
-    y justify-content: space-between distribuye el espacio horizontalmente entre los elementos.
-      Además, hemos establecido un ancho fijo para cada card utilizando flex-basis para que ocupen aproximadamente un tercio 
-    del ancho del contenedor, y hemos añadido un margen para separarlos. 
-    Esto crea una disposición horizontal ordenada de los cards. Ajusta los valores según tus necesidades de diseño.
-    */
-    /* Estilo para la clase "contenedor" */
-    .contenedor {
-      display: flex; /* Muestra los elementos hijos en línea (horizontalmente) */
-      flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea cuando no caben en la pantalla */
-      justify-content: space-between; /* Distribuye el espacio horizontalmente entre los elementos */
-    }
-
-    /* Estilo para los cards */
-    .card {
-      margin: 5px; /* Agrega un margen entre los cards */
-    border: 1px solid #c1c2ca;
-    padding: 16px;
-    border-radius: 20px;
-    }
   
-
-  </style>
 </head>
 <body>
-  <body>
   <hgroup>
     <h1>Tienda  De Mascotas Spoly</h1>
   </hgroup>
   <header style="margin-top: -20px">
   <h1>
     <div class="titulo-encabezado">
-      <img src="camaPerro.png"  alt="Logo" style="width: 180px; height: auto;">
+      <img src="LogoTiendaDaniel.png"  alt="Logo" style="width: 180px; height: auto;">
     </div>
   
-    </div>
-   
+    </div> 
   </h1>
-  
-  <h1>Productos</h1> <a href="carritodecompra.html"> Carrito de Compra </a>
+    
+   <div class="Encabezado"> 
+      <div class="contenido-central">  
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#">Nueva colección</a></li>
+          <li><a href="#">Sale</a></li>
+        </ul>
+      </nav>
+      </div>  
+
+      <div class="icono-carrito">
+        <a href="carritodecompra.html"> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+        </a>
+      </div>
+
+    </div>
+  </header>
+    
   <div class="contenedor"></div>
- 
   <script>
     // Función para obtener datos de la API ficticia
     async function obtenerProductos() {
