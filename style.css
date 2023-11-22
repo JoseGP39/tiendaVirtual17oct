@@ -17,19 +17,7 @@
     h1, h2, h3, h4, h5, h6 {
       font-family:"Myriad Pro", "Trebuchet MS", sans-serif;
 
-    hgroup {
-      position:fixed; /*especifica cómo un elemento es posicionado en el documento*/
-      z-index:3; /*Indica el orden de un elemento posicionado y sus descendientes*/
-      left:10px; /* permite desplazar un elemento respecto a su posición original tomando como referencia el borde izquierdo del elemento*/
-      top:10px;  /*permite desplazar un elemento respecto a su posición original tomando como referencia el borde superior del elemento*/
-      padding:10px; /*controla la cantidad de espacio entre cada letra en un elemento dado o bloque de texto*/
-      background:url(LogoTiendaDaniel.png);
-      color:#009274;
-      font-family:"Myriad Pro", "Trebuchet MS", sans-serif;
-      font-size:30px;
-      letter-spacing: 1px;
-      text-shadow: 4px 4px 5px #0005;                     /*text-shadow:rgba(0, 0, 0, 0.50) 0 1px 1px;*/
-    }
+   
     
     .contenedor { /* Estilo para la clase "contenedor" */
       display: flex; /* Muestra los elementos hijos en línea (horizontalmente) */
