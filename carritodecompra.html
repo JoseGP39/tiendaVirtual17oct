@@ -1,33 +1,78 @@
 <!-- Página del carrito de compras -->
 <!DOCTYPE html>
-<html>
-<head>
-</head>
-<body>
+<html lang="es">
 
-  <h1>Carrito de Compras</h1>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tienda</title>
+  <link rel="stylesheet" href="styleCarritoCompra.css">
+</head>
+
+<body>
+  <header> <!--encabezado de las paginas-->
+    <h2>
+      <div class="encabezado-logo">
+        <img src="imgs/logoMascota.jpg" alt="Logo">
+      </div>
+      <h2 class="nombre-tienda">Tienda Mascotas Spoly</h2>
+      </div>
+      <nav> <!--Seccion de navegacion menu y elances, para acceder a los diferentes sitios de la pagina-->
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="#" class="nav-link">Nosotros</a>
+        <a href="index.html" class="nav-link">Productos</a>
+        <a href="#" class="nav-link">Contacto</a>
+      </nav>
+    </h2>
+  </header>
+
+  <div class="carritoCompra">
+    <h3>Carrito de Compras</h3>
+  </div>
+
   <ul id="carritoLista"></ul>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      // Obtén el carrito desde localStorage
-      const carrito = JSON.parse(localStorage.getItem("carrito"));
+  <button id="limpiar-carrito">Limpiar Carrito</button>
 
-      // Obtén el elemento de la lista del carrito
-      const carritoLista = document.getElementById("carritoLista");
+  <div class="contenedor">
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Obtén el carrito desde localStorage
+        const carrito = JSON.parse(localStorage.getItem("carrito"));
 
-      if (carrito && carrito.length > 0) {
-        // Recorre los productos en el carrito y muestra cada uno en la lista
-        carrito.forEach((product) => {
-          const listItem = document.createElement("li");
-          listItem.textContent = product.title;
-          carritoLista.appendChild(listItem);
-        });
-      } else {
-        // Si el carrito está vacío, muestra un mensaje
-        carritoLista.innerHTML = "<p>El carrito está vacío.</p>";
-      }
-    });
-  </script>
+        // Obtén el elemento de la lista del carrito
+        const carritoLista = document.getElementById("carritoLista");
+
+        if (carrito && carrito.length > 0) {
+          // Recorre los productos en el carrito y muestra cada uno en la lista
+          carrito.forEach((product) => {
+            const listItem = document.createElement("li");
+            listItem.textContent = product.title;
+            carritoLista.appendChild(listItem);
+          });
+
+          // Manejador de eventos al botón "Vaciar Carrito"
+          const vaciarCarritoButton = document.getElementById("limpiar-carrito");
+          vaciarCarritoButton.addEventListener("click", () => {
+            
+            // Llama a una función para vaciar el carrito
+            vaciarCarrito();
+          });
+
+          // Función para vaciar el carrito
+          function vaciarCarrito() {
+            // Elimina los ítems del carrito desde el localStorage
+            localStorage.removeItem("carrito");
+
+            // Limpia la lista en la página
+            carritoLista.innerHTML = "<p>El carrito está vacío.</p>";
+          }
+       
+        }
+      });
+    </script>
+  </div>
+
 </body>
+
 </html>

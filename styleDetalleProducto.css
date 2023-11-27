@@ -1,0 +1,17 @@
+body, html {
+    font-family: sans-serif, arial, helvetica;
+    margin: o;
+    background-color: azure;
+    border-radius: 15px;
+  }
+
+  
+  .detalles-producto {
+    display: flex;
+    align-items: flex-start; /* Alinea los elementos al inicio (izquierda) */
+    justify-content: space-between; /* Espacio entre elementos */
+    padding: 20px;
+    margin-left: 60px;
+    width: 80%;
+    align-content: center;
+  }

@@ -1,36 +1,119 @@
- /*En este ejemplo, hemos utilizado CSS flexbox para que los cards se muestren horizontalmente en la clase .contenedor. 
+
+    /*En este ejemplo, hemos utilizado CSS flexbox para que los cards se muestren horizontalmente en la clase .contenedor. 
       La propiedad flex-wrap: wrap permite que los cards se envuelvan a la siguiente línea cuando no caben en la pantalla, 
     y justify-content: space-between distribuye el espacio horizontalmente entre los elementos.
       Además, hemos establecido un ancho fijo para cada card utilizando flex-basis para que ocupen aproximadamente un tercio 
     del ancho del contenedor, y hemos añadido un margen para separarlos. 
     Esto crea una disposición horizontal ordenada de los cards. Ajusta los valores según tus necesidades de diseño.
     */
-    
-
+    /* Estilo para la clase "contenedor" */
     html, body {   
       margin: 0;   
       padding: 0;   
       width: 100%;   
       height: 100%;   
-      overflow: hidden; /* Opcional: para evitar barras de desplazamiento */
-    }
-    h1, h2, h3, h4, h5, h6 {
-      font-family:"Myriad Pro", "Trebuchet MS", sans-serif;
-
-   
+      /*overflow: hidden; /* Opcional: para evitar barras de desplazamiento */}
     
-    .contenedor { /* Estilo para la clase "contenedor" */
+    .contenedor {
       display: flex; /* Muestra los elementos hijos en línea (horizontalmente) */
       flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea cuando no caben en la pantalla */
       justify-content: space-between; /* Distribuye el espacio horizontalmente entre los elementos */
+      padding: 10px; 
     }
 
-    /* Estilo para los cards */
-    .card {
-    margin: 5px; /* Agrega un margen entre los cards */
-    border: 1px solid #c1c2ca;
-    padding: 16px;
-    border-radius: 20px;
+
+    header{
+      background-color: black;
+      margin-top: 10px;
+      display: flex;
+      min-height: 200px;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      border-radius: 15px;
+      z-index: 100;
     }
 
+    a{
+      text-decoration: none;
+      color: white;
+      text-transform: uppercase;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    nav a{
+      font-weight: 600;
+      padding-right: 10px;
+      align-items: center;
+    }
+    nav a:hover{
+      color:orange;
+    }
+    .encabezado-logo img {
+      width: 150px;
+      height: 150px;
+      display: flex;
+      padding: 10px;
+      border-radius: 100px;
+    }
+    
+    .nombre-tienda{
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+      font-size: 30px;
+
+
+    }
+   
+
+    .icono-carrito a{
+      
+      color:orange;
+      padding: 10px;
+      margin-right: 50px;
+    }
+
+    .icono-carrito a:hover{
+      color: aliceblue !important;
+    }
+
+    h1 {
+      border: 0px solid #ccc;
+      display: flex;
+      color: #6c2eb9;
+      font-weight: normal;
+      font-size: 20px;
+      font-family: Arial;
+      text-transform: uppercase;
+      padding: 3px;
+    }
+
+    .contenedor {
+      display: flex; /* Muestra los elementos hijos en línea (horizontalmente) */
+      flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea cuando no caben en la pantalla */
+      justify-content: space-between; /* Distribuye el espacio horizontalmente entre los elementos */
+      
+    }
+
+   /* Estilo para los cards */
+.card {
+  margin: 2px; /* Agrega un margen entre los cards */
+  border: 1px solid #c1c2ca;
+  padding: 2em;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  }  
+  
+  .card a{
+    color: #0E0325;
+    text-decoration: none;
   }
+  
+  .card img:hover{
+    transform: scale(1.2);
+  }
+  
+
+    
+
+  
