@@ -88,12 +88,7 @@
       padding: 3px;
     }
 
-    .contenedor {
-      display: flex; /* Muestra los elementos hijos en línea (horizontalmente) */
-      flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea cuando no caben en la pantalla */
-      justify-content: space-between; /* Distribuye el espacio horizontalmente entre los elementos */
-      
-    }
+    
 
    /* Estilo para los cards */
 .card {
