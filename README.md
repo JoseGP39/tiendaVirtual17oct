@@ -1,2 +1,2 @@
-# tiendaVirtual17oct
+# tienda virtual proyecto final
 codigo tienda virtual
