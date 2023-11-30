@@ -3,10 +3,11 @@ const formulario = document.querySelector('form');
 formulario.addEventListener('submit', function (event) {
   event.preventDefault(); // Evitar que el formulario se envíe de forma convencional
   // Variable para el correo destinario
-  const destinario = "destinatario@example.com"
+  const destinario = "danielgiraldo30@hotmail.com"
   // Obtener los valores de los campos
   
   const nombre = document.getElementById('nombre').value;
+  const apellido = document.getElementById('apellido').value;
   const email = document.getElementById('email').value;
   const mensaje = document.getElementById('mensaje').value;
 
