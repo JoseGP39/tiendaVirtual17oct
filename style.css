@@ -7,31 +7,56 @@
     Esto crea una disposición horizontal ordenada de los cards. Ajusta los valores según tus necesidades de diseño.
     */
     /* Estilo para la clase "contenedor" */
-    html, body {   
+     body {   
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      
       margin: 0;   
       padding: 0;   
       width: 100%;   
       height: 100%;   
+      text-align: center;
       /*overflow: hidden; /* Opcional: para evitar barras de desplazamiento */}
+
+      .main{
+        padding-top: 15rem;
+      }
+
+      .producto h1{
+        font-size: 30px;
+        padding-left: 1em;
+        color: darkslategray;
+      }
     
     .contenedor {
+      width: 85%;
+      max-width: 850%;
+      margin: 0 0;
+
       display: flex; /* Muestra los elementos hijos en línea (horizontalmente) */
       flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea cuando no caben en la pantalla */
       justify-content: space-between; /* Distribuye el espacio horizontalmente entre los elementos */
-      padding: 10px; 
+      padding: 15px; 
+     
     }
 
 
-    header{
-      background-color: black;
-      margin-top: 10px;
+    .header{
+      background: url(imgs/banner1.jpg) no-repeat;
+      margin-top: 0px;
+      overflow: hidden;
+      background-size: cover;
       display: flex;
-      min-height: 200px;
+      min-height: 100px;
       justify-content: space-between;
       align-items: center;
       padding: 15px;
-      border-radius: 15px;
+      border-radius: 0px;
       z-index: 100;
+
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
     }
 
     a{
@@ -92,21 +117,73 @@
 
    /* Estilo para los cards */
 .card {
-  margin: 2px; /* Agrega un margen entre los cards */
+  margin: 10px; /* Agrega un margen entre los cards y/o tarjetas */
   border: 1px solid #c1c2ca;
-  padding: 2em;
+  padding: 1em;
   border-radius: 10px;
   font-family: Arial, Helvetica, sans-serif;
+
   }  
   
   .card a{
     color: #0E0325;
     text-decoration: none;
+    
   }
   
   .card img:hover{
     transform: scale(1.2);
   }
+
+   /* Estilos del pie de página */
+   .footer {
+
+    width: 100%;
+    height: 80px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    align-self: flex-end;
+  }
+
+  /* Estilos de los iconos de redes sociales */
+  .footer-icons {
+    display: flex;
+  
+    gap: 5px;
+    
+    
+
+ 
+  
+  }
+
+  .footer-icons a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    color: #333;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right:10px;
+  }
+
+  /* Estilos de los derechos de autor */
+  .footer-text {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-align: center;
+  }
+
   
 
     
