@@ -23,10 +23,12 @@
 
       .producto h1{
         font-size: 30px;
+        letter-spacing: 6px;
         padding-left: 1em;
         color: darkslategray;
         text-align: center;
         font-weight: 600;
+        justify-content: center;
       }
     
     .contenedor {
