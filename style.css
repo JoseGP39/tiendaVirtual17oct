@@ -100,6 +100,7 @@
 
     .icono-carrito a:hover{
       color: aliceblue !important;
+      transform: scale(1.2);
     }
 
     h1 {
@@ -116,7 +117,7 @@
     .producto h1{
       padding-left: 10px;
       letter-spacing: 6px;
-      font-weight: 400;
+      font-weight: 600;
       color:chocolate;
       
     }
