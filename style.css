@@ -31,20 +31,6 @@
         justify-content: center;
       }
     
-    .contenedor {
-      width: 85%;
-      max-width: 850%;
-      margin: 0 0;
-      padding-top: 3em;
-
-      display: flex; /* Muestra los elementos hijos en línea (horizontalmente) */
-      flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea cuando no caben en la pantalla */
-      justify-content: space-around; /* Distribuye el espacio horizontalmente entre los elementos */
-      
-     
-    }
-
-
     .header{
       background: url(imgs/banner1.jpg) no-repeat;
       margin-top: 0px;
@@ -125,16 +111,28 @@
       
     }*/
 
-    
+    .contenedor {
+      width: 85%;
+      max-width: 850%;
+      display: block;
+      margin: 0 0;
+      padding-top: 3em;
+
+      display: flex; /* Muestra los elementos hijos en línea (horizontalmente) */
+      flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea cuando no caben en la pantalla */
+      justify-content: space-aroun; /* Distribuye el espacio horizontalmente entre los elementos */
+      
+     
+    }
 
    /* Estilo para los cards */
-.card {
+  .card {
   margin: 5px; /* Agrega un margen entre los cards y/o tarjetas */
-  border: 1px solid #c1c2ca;
-  padding: 1em;
-  border-radius: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  justify-content: center;
+    border: 1px solid #c1c2ca;
+    padding: 1em;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
 
   }  
   
