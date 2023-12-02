@@ -30,6 +30,9 @@
         font-weight: 600;
         justify-content: center;
       }
+      .producto h1:hover{
+        color: orange;
+      }
     
     .contenedor {
       width: 85%;
@@ -129,7 +132,7 @@
 
    /* Estilo para los cards */
 .card {
-  margin: 10px; /* Agrega un margen entre los cards y/o tarjetas */
+  margin: 5cqh; /* Agrega un margen entre los cards y/o tarjetas */
   border: 1px solid #c1c2ca;
   padding: 1em;
   border-radius: 10px;
