@@ -133,7 +133,7 @@
 
    /* Estilo para los cards */
 .card {
-  margin: 5cqh; /* Agrega un margen entre los cards y/o tarjetas */
+  margin: 5px; /* Agrega un margen entre los cards y/o tarjetas */
   border: 1px solid #c1c2ca;
   padding: 1em;
   border-radius: 10px;
@@ -192,7 +192,6 @@
     line-height: 40px;
     text-decoration: none;
     font-size: 20px;
-    margin-right:30px;
   }
 
   /* Estilos de los derechos de autor */
