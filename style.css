@@ -35,12 +35,12 @@
       width: 85%;
       max-width: 850%;
       margin: 0 0;
-      padding-top: 6em;
+      padding-top: 3em;
 
       display: flex; /* Muestra los elementos hijos en línea (horizontalmente) */
       flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea cuando no caben en la pantalla */
       justify-content: space-between; /* Distribuye el espacio horizontalmente entre los elementos */
-      padding: 15px; 
+      
      
     }
 
