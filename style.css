@@ -194,6 +194,8 @@
     line-height: 40px;
     text-decoration: none;
     font-size: 20px;
+    margin-top: 5px;
+
   }
 
   /* Estilos de los derechos de autor */
@@ -201,6 +203,7 @@
     font-family: Arial, sans-serif;
     font-size: 14px;
     text-align: center;
+    margin-bottom: 3px;
   }
 
   
