@@ -23,7 +23,7 @@
       }
 
       .producto h1{
-        background-color: bisque;
+      
         font-size: 30px;
         letter-spacing: 6px;
         padding-left: 1em;
@@ -37,7 +37,7 @@
       }
     
     .contenedor {
-      width: 85%;
+      width: 100%;
       max-width: 850%;
       margin: 0 0;
       padding-top: 3em;
