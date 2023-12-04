@@ -23,10 +23,11 @@
       }
 
       .producto h1{
+        background-color: bisque;
         font-size: 30px;
         letter-spacing: 6px;
         padding-left: 1em;
-        color: orangered;
+        color: skyblue;
         text-align: center;
         font-weight: 600;
         justify-content: center;
