@@ -166,7 +166,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 2.5em;
+    padding-bottom: 0px;
     box-sizing: border-box;
     align-self: flex-end;
   }
