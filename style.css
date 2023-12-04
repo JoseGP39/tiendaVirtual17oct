@@ -27,7 +27,7 @@
         font-size: 30px;
         letter-spacing: 6px;
         padding-left: 1em;
-        color: skyblue;
+        color: green;
         text-align: center;
         font-weight: 600;
         justify-content: center;
@@ -41,6 +41,7 @@
       max-width: 850%;
       margin: 0 0;
       padding-top: 3em;
+      margin-bottom: 3em;
 
       display: flex; /* Muestra los elementos hijos en línea (horizontalmente) */
       flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea cuando no caben en la pantalla */
