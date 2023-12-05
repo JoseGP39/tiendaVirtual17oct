@@ -198,7 +198,7 @@
     margin-right: 10px;
 
   }
-  .footer-icons a{
+  .footer-icons a:hover{
     background-color: #c1c2ca;
   }
 
