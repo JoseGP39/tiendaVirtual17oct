@@ -198,6 +198,9 @@
     margin-right: 10px;
 
   }
+  .footer-icons a{
+    background-color: #c1c2ca;
+  }
 
   /* Estilos de los derechos de autor */
   .footer-text {
