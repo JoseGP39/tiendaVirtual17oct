@@ -199,7 +199,9 @@
 
   }
   .footer-icons a:hover{
-    background-color: #c1c2ca;
+    background-color: orange;
+    transform: scale(1.2);
+
   }
 
   /* Estilos de los derechos de autor */
